@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Quiz Result</title>
+</head>
+<body>
+  <div class="result-container">
+    <h2>Your Quiz Result</h2>
+    <div id="result"></div>
+    <div id="message"></div>
+  </div>
+
+  <script>
+    // Get score from localStorage
+    let score = localStorage.getItem("quizScore");
+
+    if (score) {
+      score = parseInt(score);
+      document.getElementById("result").innerText = "✅ Your Total Score: " + score;
+
+      // Show interpretation
+      let message = "";
+      if (score >= 6 && score <= 10) {
+        message = "Good 😊";
+      } else if (score >= 11 && score <= 17) {
+        message = "Moderate 😑";
+      } else if (score >= 18) {
+        message = "Needs Attention 🙁";
+      }
+
+      document.getElementById("message").innerText = message;
+
+    } else {
+      document.getElementById("result").innerText = "⚠️ No score found. Please take the quiz first.";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+/* General Page Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+/* Center content with padding */
+form, .result-container {
+  background: #ffffff;
+  margin-top: 50px;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+
+
+
+/* Headings */
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333333;
+}
+
+#Heading {
+  display: block;        /* span becomes block-level */
+  text-align: center;    /* centers text horizontally */
+  font-size: 40px;
+  font-weight: bold;
+  margin: 20px 0;        /* adds some space around it */
+}
+
+/* Labels */
+label {
+  font-weight: bold;
+  color: #444444;
+  display: block;
+  margin: 20px 0 10px;
+}
+
+/* Option Groups */
+.option-group {
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+.option-group div {
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+}
+
+.option-group input[type="radio"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+
+/* Submit Button */
+button {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  margin-top: 20px;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Result Page Styling */
+#result {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #222;
+}
+
+#message {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 15px; /* ensures it appears below result */
+  color: #555;
+}
+
